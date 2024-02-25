@@ -1,0 +1,64 @@
+.title {
+    width: 40%;
+}
+
+.link {
+    width: 60%;
+}
+
+.description {
+    width: 70%;
+}
+
+.shimmer {
+    padding: 5px;
+    width: 100%;
+    margin: 10px auto;
+    background: #ffffff;
+    max-width: 300px;
+}
+
+.shimmer .img_shimmer {
+    width: 100%;
+    /* float: right; */
+    border-radius: 8px;
+    height: 224.15px;
+}
+
+.stroke {
+    height: 15px;
+    background: #777;
+    margin-top: 20px;
+}
+
+.wrapper {
+    width: 0px;
+    animation: fullView 0.5s forwards linear;
+}
+
+.meal-content.card_shim_meal {
+    padding: 1.2rem 0.8rem 2.8rem 1.8rem;
+}
+
+@keyframes fullView {
+    100% {
+        width: 100%;
+    }
+}
+
+.animate {
+    animation: shimmer 3s;
+    animation-iteration-count: infinite;
+    background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+    background-size: 1000px 100%;
+}
+
+@keyframes shimmer {
+    from {
+        background-position: -1000px 0;
+    }
+
+    to {
+        background-position: 1000px 0;
+    }
+}

@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #fff;
 }
 
 
@@ -16,6 +15,39 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  background: #fff;
+
+}
+
+
+#header {
+  margin: 0;
+  padding: 21px;
+  background: #eb4d4b;
+  display: flex;
+  align-items: center;
+}
+
+#header h1 {
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+  font-size: 59px;
+  line-height: 63px;
+  text-align: center;
+  flex: 1 1 1%;
+}
+
+#header button {
+  background: #fff;
+  color: #EB4D4F;
+  padding: 15px 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 11px;
+  font-weight: 700;
+  width: 120px;
+  cursor: pointer;
 }
 
 .container {
@@ -43,6 +75,64 @@ strong {
   font-weight: 500;
 }
 
+
+/* Search bar css start  */
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #EB4D4F;
+  border-right: none;
+  padding: 5px;
+  /* height: 20px;.searchTerm */
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus {
+  color: #EB4D4F;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #EB4D4F;
+  background: #EB4D4F;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap_search {
+  width: 30%;
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  /* transform: translate(-50%, -50%); */
+}
+
+.search_section {
+  flex: 1 1 1%;
+}
+
+
+/* Search bar css end  */
+
+
+.lowe_search_head {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
 /***************************/
 /* MEALS SECTION */
 /***************************/
@@ -56,6 +146,7 @@ strong {
   overflow: hidden;
   max-width: 300px;
   transition: all 0.4s;
+  width: 100%;
 }
 
 .meal:hover {
@@ -77,6 +168,7 @@ strong {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+  place-items: center;
 }
 
 .tag {
@@ -134,3 +226,53 @@ strong {
   height: 224.15px;
   object-fit: cover;
 }
+
+.btn_filter {
+  padding: 4px;
+}
+
+.filter_sec {
+  margin: 10px;
+}
+
+
+/* no result found css */
+.page_404 {
+  padding: 40px 0;
+  background: #fff;
+  font-family: 'Arvo', serif;
+}
+
+.page_404 img {
+  width: 100%;
+}
+
+.four_zero_four_bg {
+
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+}
+
+
+.four_zero_four_bg h1 {
+  font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+  font-size: 80px;
+}
+
+.link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.contant_box_404 {
+  margin-top: -50px;
+}
+
+/* no result found css */
