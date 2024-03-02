@@ -4,7 +4,7 @@ import Card from "./Card";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import Noresultfound from "./Noresultfound";
-
+import axios from "axios";
 const Body = () => {
   // const [resList, setResList] = useState([RES_LIST]);
   const [resList, setResList] = useState([]);
@@ -30,7 +30,7 @@ const Body = () => {
         ? jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
             ?.restaurants
         : jsonData?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle
-            ?.restaurants
+            ?.restaurants 
     );
 
     setFilterdRestaurent(
@@ -42,8 +42,13 @@ const Body = () => {
             ?.restaurants
     );
 
-    console.log(resList, "rl");
-    console.log(filteredRestaurent, "fr");
+    // console.log(resList, "rl");
+    // console.log(filteredRestaurent, "fr");
+
+
+
+
+
   };
 
   // console.log(resList[0]?.info?.name);
