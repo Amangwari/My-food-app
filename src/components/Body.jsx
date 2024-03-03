@@ -45,10 +45,6 @@ const Body = () => {
     // console.log(resList, "rl");
     // console.log(filteredRestaurent, "fr");
 
-
-
-
-
   };
 
   // console.log(resList[0]?.info?.name);

@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Header = () => {
   // let btnname = "Login"resList.length === 0
   const [btnname, setbtnname] = useState("Log In");
 
-  // console.log("header render");
+  console.log("header render");
+
+  useEffect(()=>{
+    console.log("useeffect runs")
+  },[]) 
+
+  console.log("header render2");
+
   return (
     <header id="header">
       <h1>
