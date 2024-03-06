@@ -21,3 +21,12 @@ body {
   min-width: 320px;
   min-height: 100vh;
 } 
+
+p{
+  font-size: 14px;
+}
+
+
+li{
+  font-size: 13px;
+}

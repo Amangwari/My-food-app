@@ -1,10 +1,11 @@
 import React from "react";
-import Card from "./Card";
+import Card from "../components/Card";
 // import { RES_LIST } from "../utils/mockdata";
 import { useState, useEffect } from "react";
-import Shimmer from "./Shimmer";
-import Noresultfound from "./Noresultfound";
+import Shimmer from "../components/Shimmer";
+import Noresultfound from "../components/Noresultfound";
 import axios from "axios";
+import { Link } from "react-router-dom";
 const Body = () => {
   // const [resList, setResList] = useState([RES_LIST]);
   const [resList, setResList] = useState([]);
@@ -47,8 +48,10 @@ const Body = () => {
 
   };
 
+  // console.log(resList)
+
   // console.log(resList[0]?.info?.name);
-  return resList.length === 0 ? (
+  return resList && resList.length === 0 ? (
     <Shimmer />
   ) : (
     <div>
@@ -106,7 +109,10 @@ const Body = () => {
         <div className="cards_rest">
           {/* not using keys (not acceptable) <<< index as a key <<< unique id (best practice) */}
           {filteredRestaurent.map((restaurant) => (
-            <Card resdata={restaurant} key={restaurant.info.id} />
+            console.log(restaurant),
+            <Link to={`/restaurants/${restaurant.info.id}`} key={restaurant.info.id} >
+              <Card resdata={restaurant} />
+            </Link>
           ))}
         </div>
       )}
