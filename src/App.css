@@ -276,3 +276,39 @@ strong {
 }
 
 /* no result found css */
+
+
+
+
+/* about us css */
+.main_crd{
+  margin: 50px;
+  /* height: 80vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.user_crdd{
+  padding: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  min-width: 260px;
+  cursor: pointer;
+  display: flex;
+  gap: 20px;
+}
+
+.user_crdd:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, .3);
+  transition: 300ms ease;
+}
+
+.user_crdd img{
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* about us css */
