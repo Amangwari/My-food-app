@@ -6,7 +6,7 @@ const Users = ({name, location}) => {
     <>
       <div className="main_crd">
         <div className="user_crdd">
-          <div>
+          <div> 
             <img
               src="https://cdn.midjourney.com/b4917b7e-f175-4676-a093-b52c1071032a/grid_0.png"
               alt="John Doe"
